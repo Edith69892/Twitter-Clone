@@ -1,8 +1,7 @@
 
 import './App.css'
 import LeftBar from './components/LeftBar/LeftBar'
-import Login from './components/LogIn/Login'
-import SignUp from './components/SignUp/SignUp'
+import {Login, SignUp, Home} from "./index"
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -11,6 +10,9 @@ function App() {
      <BrowserRouter>
        {/* <Login /> */}
        <LeftBar />
+       <main>
+        <Home />
+       </main>
      </BrowserRouter>
     </>
   )
