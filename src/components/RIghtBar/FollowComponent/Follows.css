@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0px;
+  
+}
+
+.info{
+    color: white;
+}
+
+.name{
+    font-weight: bold;
+    margin-left: 2px;
+}
+.username{
+    color: gray;
+    font-size: 0.9rem;
+}
+.image-container{
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+  height: 2.3rem;
+  border-radius: 50%;
+}
+
+.follow-btn{
+    margin-left: auto;
+}
+
+.follow-btn button{
+    padding: 10px 15px;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+
