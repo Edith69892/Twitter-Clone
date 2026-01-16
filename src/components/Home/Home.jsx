@@ -4,6 +4,8 @@ import RightBar from '../RIghtBar/RIghtBar'
 import "../Home/Home.css"
 import userLogo from "../../assets/userLogo1.jpg"
 import Avatar from '../Avatar/Avatar.jsx'
+import TxtArea from "../Input/TxtArea.jsx"
+import { FiImage } from 'react-icons/fi'
 
 function Home() {
     return (
@@ -18,9 +20,9 @@ function Home() {
                                  <Avatar imgUrl={userLogo}/>
                             </div>
                             <div className='tweet'>
-                            <textarea placeholder="What's happening?" rows="3"></textarea>
+                                <TxtArea />
                             <div className='post-options'>
-                                {/* img icon */}
+                                <FiImage className='image-icon' size={22}/>
                                 <button>Post</button>
                             </div>
                             </div>
