@@ -7,8 +7,12 @@ function Home() {
     return (
         <div className='home-container'>
             <div className='feed-container'>
-                    <Navbar />
-                    vddalk
+                    <div>
+                        <Navbar />
+                    </div>
+                    <div className='posts-container'>
+                        {/* Posts will go here */}
+                        </div>
             </div>
             <div className='rightBar'>
                 <RightBar />
