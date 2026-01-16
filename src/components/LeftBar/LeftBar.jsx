@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom'
 import logo from "../../assets/logo3.png"
 import { MdHome } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
-import { FiSettings, FiLogOut } from "react-icons/fi";
+import { FiBookmark, FiSettings, FiLogOut } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
-
+import userLogo from "../../assets/userLogo1.jpg"
 import "../LeftBar/LeftBar.css"
+import Avatar from '../Avatar/Avatar';
 
 function LeftBar() {
 
@@ -16,31 +17,37 @@ function LeftBar() {
         {
             name: "Home",
             slug: "/home",
-            icon : <MdHome />
+            icon: <MdHome />
         },
         {
             name: "Explore",
             slug: "/explore",
-            icon : <FiSearch />
+            icon: <FiSearch />
         },
         {
             name: "Notifications",
             slug: "/notifications",
-            icon : <IoNotificationsOutline />
+            icon: <IoNotificationsOutline />
+        },
+        {
+            name: "Bookmarks",
+            slug: "/bookmarks",
+            icon: <FiBookmark />
         },
         {
             name: "Profile",
             slug: "/profile",
-            icon : <CgProfile />
+            icon: <CgProfile />
         }, {
             name: "Setting",
             slug: "/setting",
-            icon : <FiSettings />
+            icon: <FiSettings />
         },
+
         {
             name: "Logout",
             slug: "/logout",
-            icon : <FiLogOut />
+            icon: <FiLogOut />
         },
     ]
     return (
@@ -58,33 +65,33 @@ function LeftBar() {
                     {barItems.map((item) => (
                         <li key={item.name}>
                             <div className='item-container'
-                            onClick={() => navigate(item.slug)}>
+                                onClick={() => navigate(item.slug)}>
                                 <div className='icon'>
                                     {item.icon}
                                     <span>{item.name}</span>
                                 </div>
 
                             </div>
-                            </li>
-                        ))}
+                        </li>
+                    ))}
 
                 </ul>
                 <div className='post-btn'>
-                            <button>Post</button>
+                    <button>Post</button>
+                </div>
+
+                <button className='profile-btn'>
+                    <div className='profile-container'>
+                        <div className="profile-img">
+                            <Avatar imgUrl={userLogo} />
                         </div>
-                
-                    <button className='profile-btn'>
-                        <div className='profile-container'>
-                            <div className='profile-img'>
-                                <img src={logo} alt="avatar" />
-                            </div>
-                            <div className='profile-info'>
-                                <div>Roshan</div>
-                                <div>@PatilRosha99</div>
-                            </div>
+                        <div className='profile-info'>
+                            <div>Roshan</div>
+                            <div>@PatilRosha99</div>
                         </div>
-                    </button>
-                
+                    </div>
+                </button>
+
             </nav>
         </div>
     )

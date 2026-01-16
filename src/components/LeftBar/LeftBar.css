@@ -38,6 +38,7 @@ ul li {
   display: flex;
   width: 100%;
   cursor: pointer;
+  padding: 5px 0;
 }
 
 .item-container .icon {
@@ -47,6 +48,7 @@ ul li {
   color: white;
   padding: 10px 15px 10px 7px;
   font-size: 1.8rem;
+  border-radius: 30px;
 }
 
 .item-container .icon span {
@@ -57,12 +59,14 @@ ul li {
 
 .item-container:hover .icon {
   background-color: #1da1f2;
-  border-radius: 30px;
+
 }
 
 /* post button */
 .post-btn {
   margin-bottom: 10px;
+  background-color: black;
+    border-radius: 30px;
 }
 
 .post-btn button {
@@ -72,6 +76,7 @@ ul li {
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: bolder;
+  border: none;
 }
 
 /* profile button */
@@ -80,6 +85,14 @@ ul li {
   padding: 5px;
   border-radius: 30px;
   cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.profile-btn:hover{
+  background-color: #1da1f2;
 }
 
 
@@ -91,17 +104,14 @@ ul li {
 }
 
 .profile-img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-img img {
-  height: 2.3rem;
-  border-radius: 50%;
-}
 
 .profile-info {
   display: flex;

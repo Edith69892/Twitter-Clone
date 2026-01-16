@@ -1,13 +1,11 @@
 import React from 'react'
 import "../FollowComponent/Follows.css"
-import logo from "../../../assets/logo3.png"
+import Avatar from '../../Avatar/Avatar.jsx'
 
 function Follows({imgUrl, name, username}) {
     return (
         <div className='container'>
-            <div className='image-container'>
-                <img src={imgUrl} alt="avatar" />
-            </div>
+            <Avatar imgUrl={imgUrl} />
             <div className='info'>
                 <div className='name'>{name}</div>
                 <div className='username'>{username}</div>

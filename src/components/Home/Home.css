@@ -22,3 +22,9 @@
     padding: 10px 40px;
     
 }
+
+.add-post{
+  display: flex;
+  background-color: green;
+  padding: 10px 20px;
+}

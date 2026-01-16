@@ -20,19 +20,6 @@
     color: gray;
     font-size: 0.9rem;
 }
-.image-container{
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-  height: 2.3rem;
-  border-radius: 50%;
-}
-
 .follow-btn{
     margin-left: auto;
 }
