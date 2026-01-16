@@ -3,22 +3,31 @@ import { useState } from 'react'
 import "../Home/Navbar.css"
 
 function Navbar() {
-    const [active, setActive] = useState("For You");
+    const [active, setActive] = useState("forYou");
+
+    const navItems = [
+        {
+            name: "For You",
+            id: "forYou"
+        },
+        {
+            name: "Following",
+            id: "following"
+        }
+    ];
     return (
         <div className='navbar'
         >
-            <div className='nav-items' onClick={() => setActive("For You")}>
+            {
+                navItems.map((item) => (
+                    <div className='nav-items' onClick={() => setActive(item.id)}>
                 <div className="nav-text">
-                    <span>For You</span>
-                    {active === "For You" && <div className='active-line'></div>}
+                    <span>{item.name}</span>
+                    <div className= {`active-line ${active === item.id ?"show" : ""}`}></div>
                 </div>
             </div>
-            <div className='nav-items' onClick={() => setActive("following")}>
-                <div className="nav-text">
-                    <span>Following</span>
-                    {active === "following" && <div className='active-line'></div>}
-                </div>
-            </div>
+                ))
+            }
         </div>
     )
 }
