@@ -17,10 +17,11 @@
 .post-header{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .post-header .post-name{
+  color: white;
     font-weight: bold;
     font-size: 1rem;
 }
