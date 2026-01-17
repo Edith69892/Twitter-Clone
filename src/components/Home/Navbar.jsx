@@ -22,7 +22,7 @@ function Navbar() {
                 navItems.map((item) => (
                     <div className='nav-items' onClick={() => setActive(item.id)}>
                 <div className="nav-text">
-                    <span>{item.name}</span>
+                    <span style={{color : `${active === item.id ? "white" : "gray"}`}}>{item.name}</span>
                     <div className= {`active-line ${active === item.id ?"show" : ""}`}></div>
                 </div>
             </div>

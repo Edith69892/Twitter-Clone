@@ -3,6 +3,8 @@
   width: 100%;
   height: 50px;
   border-bottom: 1px solid #2f3336;
+  background: transparent;
+  backdrop-filter: blur(8px);
 }
 
 .nav-items {
@@ -14,7 +16,7 @@
 }
 
 .nav-items:hover {
-  background-color: #2f3336;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-text {
@@ -24,8 +26,8 @@
   align-items: center;
 }
 
-span {
-  color: white;
+.nav-text span {
+  color: gray;
   font-size: 18px;
   font-weight: 600;
 }
